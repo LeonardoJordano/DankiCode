@@ -9,7 +9,7 @@
 }
 
 html, body {
-	height: 200%;
+	height: 100%;
 }
 
 /* BANNER */
@@ -226,6 +226,7 @@ section.sistem .cont-sistem button {
 }
 
 section.sistem .cont-sistem div.device {
+	min-width: 450px;
 	width: 50%;
 	height: 110%;
 	background-image: url('../imagens/device.png');
@@ -248,3 +249,324 @@ section.sistem .cont-sistem div.device {
 	}
 
 }
+
+/* SECTION PESSOAS */
+
+section.peoples {
+	background-color: white;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+section.peoples .cont-people {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 70%;
+}
+
+section.peoples .cont-people h2 {
+	color: #472663;
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 30px 0px;
+}
+
+section.peoples .cont-people p {
+	min-width: 350px;
+}
+
+section.people .cont-img {
+	width: 80%;
+}
+
+section.peoples img {
+	width: 98%;
+	margin: 0px 5px;
+	position: relative;
+	bottom: -50px;
+	background-color: green;
+	z-index: 10;	
+}
+
+/* SECTION TIME E AUTOR */
+
+section.container {
+	background-color: red;
+	width: 100%;
+	height: 450px;
+	display: flex;
+}
+
+section.container .part1 {
+	height: 100%;
+	width: 50%;
+	background-color: #835FA7;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+section.container .cont-time {
+	width: 80%;
+	color: white;
+}
+
+section.container .cont-time h2 {
+	font-weight: normal;
+	font-size: 23px;
+	font-style: italic;
+}
+
+section.container .cont-time p {
+	font-size: 15px;
+	line-height: 35px;
+	margin-top: 10px;
+}
+
+section.container .cont-actor {
+	/* background-color: red; */
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	width: 90%;
+	height: 60%;
+}
+
+section.container .cont-actor img {
+	width: 40px;
+	height: 40px;
+	margin: 0px 10px;
+}
+
+section.container .cont-actor .cont-actor-img{
+	display: flex;
+}
+
+section.container .cont-actor img, section.container .cont-actor h2 {
+	margin-top: 60px;
+}
+
+section.container .cont-actor  h2 {
+	/* font-weight: normal; */
+}
+
+section.container .cont-actor p {
+	color: #232323;
+	font-size: 13px;
+	font-style: italic;
+}
+
+section.container .cont-actor span {
+	margin-top: 10px;
+}
+
+section.container .cont-actor span.cicle {
+	height: 16px;
+	width: 16px;
+	background-color: rgb(170,170,170);
+	margin: 15px 5px;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
+}
+
+section.container .cont-actor div.cicles {
+	display: flex;
+}
+
+section.container .part2 {
+	height: 100%;
+	width: 50%;
+	background-color: white;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+@media screen and (max-width: 580px) {
+	
+	section.container {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    		    position: relative;
+	    top: 25px;
+	    
+	}
+
+	section.container .part1 {
+		padding: 10px;
+		width: 100%;
+	}
+
+	section.container .cont-time {
+		margin-top: 50px;
+	}
+
+	section.container .part2 {
+		padding: 10px;
+		width: 100%;
+	}
+
+	section.container .part2 .cont-actor {
+		-webkit-justify-content: center;
+		        justify-content: center;
+	}
+
+}
+
+/* SECTION MAP */
+
+section.map  {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	background-color: #472563;
+	display: flex;
+}
+
+section.map div.cont-contato {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+section.map div.cont-contato form {
+	width: 80%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+section.map div.cont-contato form h2, section.map div.cont-contato form p {
+	color: white;
+	font-weight: normal;
+}
+
+section.map div.cont-contato form input[type=text] {
+	width: 90%;
+	max-width: 480px;
+	margin-top: 10px;
+	height: 58px;
+	line-height: 58px;
+	padding-left: 8px;
+}
+
+section.map div.cont-contato form input[type=submit] {
+	border: 0px;
+	width: 164px;
+	height: 44px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	margin-top: 15px;
+	background-color: #FF703D;
+	color: white;
+}
+
+section.map div.cont-contato form textarea {
+	width: calc(89% + 2px);
+	height: 115px;
+	padding-left: 8px;
+	margin-top: 10px;
+	max-width: 480px;
+}
+
+section.map div.maps {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+section.map div.maps .cont-map iframe {
+	width: 100%;
+	height: 80%;
+	border: 5px solid rgb(200,200,200);
+}
+
+section.map div.maps .cont-map {
+	width: 100%;
+	height: 450px;
+}
+
+section.map div.maps .cont-map h2 {
+	color: white;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 950px) { 
+
+	section.map {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	section.map div.cont-contato {
+		width: 100%;
+		text-align: center;
+	}
+
+	section.map div.cont-contato form {
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-align-items: center;
+		        align-items: center;
+	}
+
+	section.map div.maps .cont-map {
+		height: 400px;
+		width: 100%;
+	}
+
+	section.map div.maps {
+		width: 100%;
+	}	
+
+}
+
+/* FOOTER */
+
+footer {
+	width: 100%;
+	padding: 40px 2%;
+	background-color: #192123;
+	color: white;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+	footer {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    -webkit-align-items: center;
+	            align-items: center;
+	}
+}
+
