@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -9,50 +10,285 @@ html, body {
 
 .container {
 	width: 100%;
-	max-width: 1200px;
-	margin: 0px auto;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-.clear {
-	clear: both;
-}
+/* HEADER */
 
 header {
-	background-color: #d6d6d6;
-	padding: 10px 2%;
+	padding: 10px 25px 25px 25px;
+	background-color: rgb(220, 220, 220);
+		display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	align-items: center;
 }
 
-.logo1 {
-	float: left;
-	width: 160px;
-	height: 90px;
-	/*background-color: purple;*/
+.wrapper-logo {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+			align-items: center;
+}
+
+.cont-logo1 {
 	background-image: url('../imagens/logo1.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-.logo2 {
-	float: right;
-	width: 160px;
-	height: 90px;
-	/*background-color: green;*/
+.cont-logo2 {
 	background-image: url('../imagens/logo2.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
-@media screen and (max-width: 510px) {
+header .cont-logo1, .cont-logo2 {
+	background-position: center;
+	background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+	height: 60px;
+	width: 150px;
+}
+
+@media screen and (max-width: 630px) {
+	.wrapper-logo {
+		width: 75%;
+		height: 100%;
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		-webkit-align-items: center;
+				align-items: center;
+	}
 
 	header {
-		text-align: center;
+		height: 170px;
+	}
+}
+
+/* FORMULARIO */
+
+@media screen and (max-width: 1024px) {
+	section.banner {
+		height: auto;
+		padding: 80px 0px;
+		display: flex;
+		-webkit-justify-content: center;
+			    justify-content: center;	
 	}
 
-	.logo1, .logo2 {
-		margin-top: 10px;
-		display: inline-block;
-		float: none;
+	section.banner section.cont-form {
+		margin-right: 0px;
 	}
+
+}
+
+section.banner {
+	background-image: url('../imagens/bg.jpg');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 560px;
+	
+	display: flex;
+	-webkit-flex-direction: row-reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+}
+
+section.banner section.cont-form {
+	width: 400px;
+	height: 105%;
+	background-color: white;
+	position: relative;
+	margin-right: 25px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.47);
+-moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.47);
+box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.47);
+}
+
+section.banner section.cont-form h2 {
+	background-color: rgb(210, 210, 210);
+	padding: 25px 15px;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+section.banner form {
+	/* background-color: red; */
+}
+
+section.banner div.wrapper-input input[type=text] {
+	height: 45px;
+	line-height: 45px;
+	width: 97%;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+section.banner div.wrapper-input input[type=submit] {
+	width: 97%;
+	height: 50px;
+	background-color: rgb(3, 60, 80);
+	border: 0px;
+	color: white;
+	font-size: 25px;
+}
+
+section.banner div.wrapper-input p {
+	color: rgb(82, 82, 82);
+	font-size: 14px;
+}
+
+section.banner div.wrapper-input {
+	margin: 40px 10px;
+}
+
+/* CHAMADA */
+
+section.chamada {
+	width: 100%;
+	padding: 10px 0px 50px 0px;
+	background-color: #29526d;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+section.chamada div.wrapper-call {
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	color: white;
+	text-align: center;
+}
+
+section.chamada h2 {
+	font-weight: normal;
+	font-size: 22px;
+}
+
+section.chamada p {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+section.chamada div.icon-arrow {
+	width: 64px;
+	height: 64px;
+	background-image: url('../imagens/arrow.png');
+	-webkit-background-size: 100% 100%;
+	     -o-background-size: 100% 100%;
+	        background-size: 100% 100%;
+	position: relative;
+	top: -40px;
+}
+
+@media screen and (max-width: 768px) {
+	section.chamada div.wrapper-call {
+		width: 80%;
+	}
+}
+
+/* MOSAICO */
+
+section.mosaico {
+	width: 100%;
+	height: auto;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+section.mosaico .item-1 {
+	height: 100%;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+section.mosaico .cont {
+	padding: 90px 40px;
+	width: 40%;
+	text-align: left;
+	color: white;
+	background-color: #4683AB;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+section.mosaico p {
+	width: 100%;
+}
+
+section.mosaico .img {
+	background-image: url('../imagens/mosaico.jpg');
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: center;
+	z-index: 10;
+	width: 60%;
+	padding: 90px 40px;
+}
+
+section.mosaico .reverse {
+	-webkit-flex-direction: row-reverse;
+	    -ms-flex-direction: row-reverse;
+	        flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+
+	section.mosaico .cont {
+		width: auto;
+		padding: 70px;
+	}
+
+
+	section.mosaico .item-1 {
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	}
+	
+	section.mosaico .img {
+	width: 100%;
+	padding: 0px;
+	height: 300px;
+	}
+}
+
+/* FOOTER */
+
+
+footer {
+	padding: 20px 0px;
+	width: 100%;
+	background-color: rgb(220,220,220);
+	text-align: center;
+}
+
+footer img {
+	width: 130px;
 }
