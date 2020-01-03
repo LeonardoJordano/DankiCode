@@ -1,0 +1,250 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+	height: 200%;
+}
+
+/* BANNER */
+
+div.banner {
+	width: 100%;
+	height: 110vh;
+	background-image: url('../imagens/capa.png');
+}
+
+header {
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 100px;
+}
+
+div.banner .cont-menu {
+	width: 90%;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+div.banner .cont-menu ul {
+	display: flex;
+	list-style: none;
+	color: white;
+	
+}
+
+div.banner .cont-menu ul li {
+	margin: 0px 30px;
+}
+
+div.banner .cont-menu ul li a {
+	border: 0px;
+	color: white;
+	text-decoration: none;
+}
+
+div.banner .logo {
+	width: 160px;
+	height: 40px;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../imagens/logo-danki.png');
+}
+
+div.banner .center {
+	color: white;
+	margin: 200px 150px;
+	max-width: 600px;
+	float: right;
+	
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+div.banner .center h2 {
+	font-weight: normal;
+	font-size: 40px;
+}
+
+div.banner .center p {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 785px) {
+
+	div.banner {
+		height: 592px;
+	}
+
+	div.banner .logo {
+	width: 200px;
+	height: 80px;
+	}
+
+	header {
+		height: auto;
+	}
+
+	div.banner .cont-menu {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	height: auto;
+	width: 100%;	
+	
+	}
+
+	div.banner .cont-menu ul {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    width: 90%;
+	}
+
+	div.banner .cont-menu ul li {
+		display: block;
+		width: 100%;
+		background-color: white;
+		margin: 1px 0px;
+		text-align: center;
+		padding: 10px;
+	}
+
+	div.banner .cont-menu ul li a {
+		color: black;
+		
+	}
+
+	div.banner .cont-menu ul li:hover {
+		transition: 0.3s;
+		opacity: 0.6;
+	}
+
+	div.banner .center {
+		max-width: 100%;
+		margin: 50px 0px;
+		float: none;
+		/* background-color: red; */
+		text-align: center;	
+		width: 100%;
+		-webkit-align-items: center;
+		        align-items: center;
+	}
+
+	div.banner .center h2 {
+		font-size: 30px;
+		/* background-color: green; */
+		max-width: 100%;
+		padding: 10px;
+	}
+
+	div.banner .center p {
+		font-size: 15px;
+	}
+
+}
+
+/* SECTION SISTEMAS */
+
+section.sistem {
+	width: 100%;
+	height: 400px;
+	background-color: #472562;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+section.sistem .cont-sistem {
+	width: 80%;
+	/* background-color: red; */
+	display: flex;
+}
+
+section.sistem .cont-sistem ul {
+	list-style-position: inside;
+}
+
+section.sistem .cont-sistem .cont-ul {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	/* margin: 0px 70px; */
+	color: white;
+	/* background-color: green; */
+}
+
+section.sistem .cont-sistem h2 {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+section.sistem .cont-sistem p {
+	padding: 10px;
+}
+
+section.sistem .cont-sistem ul li {
+	margin: 5px 0px;
+}
+
+section.sistem .cont-sistem button {
+	width: 165px;
+	height: 44px;
+	margin-top: 30px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	border: 0px;
+	background-color: #FF703D;
+	color: white;
+	cursor: pointer;
+}
+
+section.sistem .cont-sistem div.device {
+	width: 50%;
+	height: 110%;
+	background-image: url('../imagens/device.png');
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: -40px;
+}
+
+@media screen and (max-width: 950px) { 
+
+	section.sistem .cont-sistem div.device {
+		display: none;
+	}
+
+	section.sistem .cont-sistem .cont-ul {
+		width: 100%;
+		-webkit-align-items: center;
+		        align-items: center;
+	}
+
+}
